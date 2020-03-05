@@ -1,0 +1,38 @@
+.main
+  .main-top
+    .main-top__box
+      .main-top__box__group-name
+        食事会
+      .main-top__box__menber-name
+        Member:佐藤
+    .main-top__edit-button
+      = link_to '', class: 'edit-buttun' do
+        Edit
+
+  .main-center
+    .main-center__box
+      .main-center__box__user-name
+        山田
+      .main-center__box__date
+        2020/03/05(Wed)17:43:20
+    .main-center__content
+      おはよう
+
+    .main-center__box
+      .main-center__box__user-name
+        佐藤
+      .main-center__box__date
+        2020/03/06(Wed)17:43:20
+    .main-center__content
+      こんにちは
+    
+  .main-bottom
+    .main-bottom__left
+      .main-bottom__left__message
+        type a message
+      .main-bottom__left__image
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file"}
+    .main-bottom__right
+      send
