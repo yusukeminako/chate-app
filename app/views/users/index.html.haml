@@ -1,0 +1,15 @@
+%ul.header
+- if user_signed_in?
+  %li.logout
+    = link_to 'ログアウト', '/users/sign_out', method: :delete
+- else
+  %li.sin-up
+    = link_to '新規会員登録', '/users/sign_up'
+  %li.login
+    = link_to 'ログイン', '/users/sign_in'
+
+.main-button
+  =link_to 'PAPAチャットSTART', '/messages'
+
+  
+   
