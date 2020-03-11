@@ -5,15 +5,28 @@
         = current_user.name
       %ul.side-top__box__icon
         %li.list
-          = link_to '' do
+          = link_to root_path do
+            = icon('fas', 'home', class: 'icon')
+        %li.list
+          = link_to new_group_path do
             = icon('fas', 'edit', class: 'icon')
-        -# %li.list
-        -#   = link_to edit_user_registration_pash(current_user) do
-        -#     = icon('fas', 'cog', class: 'icon')
+        %li.list
+          = link_to edit_user_path(current_user) do
+            = icon('fas', 'cog', class: 'icon')
 
   .side-main
-    .side-main__box
-      .side-main__box__box1
-        techcamp
-      .side-main__box__box2
-        まだメッセージがありません。
+    .side-main__title
+      あなたの所属グループ一覧
+      - current_user.groups.each do |group|
+        .side-main__box
+          = link_to group_messages_path(group) do
+            .side-main__box__box
+              .side-main__box__box__group-name
+                グループ名　　
+              .side-main__box__box__box1
+                = group.name
+            .side-main__box__box
+              .side-main__box__box__new
+                最新記事　　　
+              .side-main__box__box__box2
+                = group.show_last_message

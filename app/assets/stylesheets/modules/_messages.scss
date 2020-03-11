@@ -10,7 +10,7 @@ body{
 // サイド部分
 .side-top{
   height: 100px;
-  background-color: #432;
+  background-color: azure;
   width:300px;
   &__box{
     display: flex;
@@ -19,7 +19,7 @@ body{
 
     &__name{
       font-size:16px;
-      color:white;
+      color:black;
 
     }
     &__icon{
@@ -36,26 +36,45 @@ body{
   color: #0bd;
   padding: 0 5px;
 }
+.fa-home:before {
+  color: #0bd;
+  padding: 0 5px;
+}
 
 .side-main{
   width:300px;
-  background-color: rgb(97, 72, 47);
+  background-color: aliceblue;
   height:calc(100vh - 100px);
+
+
+  &__title{
+    text-align: center;
+  }
   &__box{
     padding-top: 20px;
     padding-bottom: 40px;
     padding-left: 20px;
     padding-right: 20px;
-    &__box1{
-      padding-bottom: 5px;
-      font-size: 15px;
-      color:white;
-    }
-    &__box2{
-      color:white;
-      font-size: 11px;
-  
-  
+    &__box{
+      display: flex;
+      justify-content: flex-start;
+      &__group-name{
+        font-size: 15px;
+        color: gray
+      }
+      &__box1{
+        padding-bottom: 5px;
+        font-size: 15px;
+        color:black;
+      }
+      &__new{
+        font-size: 13px;
+        color: gray;
+      }
+      &__box2{
+        color:black;
+        font-size: 11px;
+      }
     }
   }
   
@@ -66,7 +85,7 @@ body{
 .main-top{
   height: 100px;
   width:calc(100vw - 300px);
-  background-color: #ffffff;
+  background-color: aliceblue;
   padding: 0 40px;
   display: flex;
   justify-content: space-between;
@@ -103,7 +122,7 @@ body{
 }
 .main-center{
   width:calc(100vw - 300px);
-  background-color: #fafafa;
+  background-color: azure;
   height: calc(100vh - 190px);
 
 
@@ -114,13 +133,16 @@ body{
   height: 90px;
   width:calc(100vw - 300px);
 }
+
 // メイン中央部分
 .main-center{
   padding-top: 35px;
   padding-left: 40px;
+  overflow: scroll;
   &__box{
     padding-bottom: 12px;
     display: flex;
+    position: relative;
     &__user-name{
       color:#333333;
       font-size: 16px;
@@ -128,36 +150,42 @@ body{
     &__date{
       color:#999999;
       font-size:12px;
+      position: absolute;
+      top: 36px;
     }
   }
   &__content{
     padding-bottom: 46px;
     color:#434A54;
     font-size: 14px;
+    padding: 13px 106px;
+    display: flex;
 
   }
 }
+.lower-message__content{
+  font-size: 20px;
+}
+
 // メインフッダー部分
 .main-bottom{
   display: flex;
   &__left{
-    margin-left: 50px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
     position: relative;
-    background-color: white;
     width: 1100px;
+    padding-top: 10px;
+    padding-left: 10px;
     &__message{
       color: #999999;
       padding-left: 10px;
       line-height: 67px;
+      width: 1100px;
     }
 
     &__image{
       position: absolute;
-      top:23px;
-      right: 30px;
+      top:0px;
+      right: -127px;
 
     }
   }
@@ -167,9 +195,11 @@ body{
     background-color: #0bd;
     margin: 10px;
     width: 100px;
-    text-align: center;
     line-height: 71px;
     font-size: 28px;
+    &:hover {
+      transform: scale(1.1);
+    }
 
   }
 }

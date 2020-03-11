@@ -1,15 +1,22 @@
+%ul#header-images
+  %li
+    %img{:src => "assets/image_top_04.jpg", class: "image1"}/
+  %li
+    %img{:src => "assets/image_top_02.jpg", class: "image2"}/
+  %li
+    %img{:src => "assets/image_top_01.jpg", class: "image3"}/
+  %li
+    %img{:src => "assets/image_top_04.jpg", class: "image4"}/
 %ul.header
-- if user_signed_in?
-  %li.logout
-    = link_to 'ログアウト', '/users/sign_out', method: :delete
-- else
-  %li.sin-up
-    = link_to '新規会員登録', '/users/sign_up'
-  %li.login
-    = link_to 'ログイン', '/users/sign_in'
+  - if user_signed_in?
+    %li.logout
+      = link_to 'ログアウト', '/users/sign_out', method: :delete
+  - else
+    %li.sin-up
+      = link_to '新規会員登録', '/users/sign_up'
+    %li.login
+      = link_to 'ログイン', '/users/sign_in'
 
 .main-button
-  =link_to 'PAPAチャットSTART', '/messages'
-
+  =link_to 'PAPAチャットSTART', '/groups'
   
-   
