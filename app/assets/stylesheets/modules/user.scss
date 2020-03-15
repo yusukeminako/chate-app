@@ -196,7 +196,47 @@
   width:120px;
   text-align: center;
   line-height: 40px;
+  overflow: hidden;
 }
+.logout:after{
+  width: 100%;
+  height: 0;
+  font-size:14px;
+  content:"Really?";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background : aqua;
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transition: .2s;
+  z-index: -1;
+  line-height: 91px;
+}
+.logout:hover{
+  color: #0bd;
+}
+.logout:hover:after{
+  height: 240%;
+  opacity: 1;
+}
+.logout:active:after{
+  height: 340%;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 a:-webkit-any-link{
   text-decoration: none;
 }
@@ -292,11 +332,11 @@ header ul#header-images li {
 .main-button {
   display: inline-block;
   width: 300px;
-  height: 58px;
+  height: 70px;
   text-align: center;
   background-color: #0bd;
   font-size: 16px;
-  line-height: 52px;
+  line-height: 71px;
   color: #FFF;
   text-decoration: none;
   font-weight: bold;
@@ -311,7 +351,7 @@ header ul#header-images li {
 .main-button:after{
   width: 100%;
   height: 0;
-  content:"";
+  content:"welcome!";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -320,6 +360,7 @@ header ul#header-images li {
   transform: translateX(-50%) translateY(-50%) rotate(45deg);
   transition: .2s;
   z-index: -1;
+  line-height: 161px;
 }
 .main-button:hover{
   color: #0bd;

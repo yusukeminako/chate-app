@@ -9,7 +9,7 @@
           %span.chat-header__user #{user.name}
     .main-top__edit-button
       = link_to edit_group_path(@group), class: 'edit-buttun' do
-        編集
+        = icon('fas', 'edit', class: 'icon')
 
   .main-center
     = render @messages

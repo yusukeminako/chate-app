@@ -3,7 +3,7 @@ $(document).ready(function() {
 		var timeout = 3000;
 		var speed = 0;
 		var element = $(this).children();
-		var length = $(this).children().length;
+		// var length = $(this).children().length;
 		var current = 0;
 		var next = 1;
 
