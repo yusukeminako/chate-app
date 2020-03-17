@@ -18,5 +18,6 @@ module ChateApp
       g.test_framework false
     end
     config.time_zone = 'Tokyo'
+    config.assets.initialize_on_precompile = false
   end
 end
