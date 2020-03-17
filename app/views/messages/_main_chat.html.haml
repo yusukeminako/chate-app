@@ -9,7 +9,7 @@
           %span.chat-header__user #{user.name}
     .main-top__edit-button
       = link_to edit_group_path(@group), class: 'edit-buttun' do
-        = icon('fas', 'edit', class: 'icon')
+        = icon('fas', 'edit', class: 'icon fa-2x')
 
   .main-center
     = render @messages
@@ -22,6 +22,6 @@
         = f.text_field :content, class: 'main-bottom__left__message', placeholder: 'type a message'
         .main-bottom__left__image
           = f.label :image, class: 'input-box__image' do
-            = icon('fas', 'image', class: 'icon')
+            = icon('fas', 'image', class: 'icon fa-2x')
             = f.file_field :image, class: 'file'
           = f.submit 'Send', class: 'main-bottom__right'

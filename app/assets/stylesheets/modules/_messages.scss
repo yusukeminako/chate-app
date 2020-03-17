@@ -18,7 +18,7 @@ body{
     padding: 38px 17px;
 
     &__name{
-      font-size:16px;
+      font-size:20px;
       color:black;
 
     }
@@ -88,6 +88,7 @@ body{
   background-color: aliceblue;
   padding: 0 40px;
   display: flex;
+  justify-content: space-between;
   &__box{
     padding-top: 35px;
     
