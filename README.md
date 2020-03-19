@@ -10,24 +10,24 @@ PAPA-CHAT 〜パパも子育ても頑張ります！〜
 https://papachat.herokuapp.com/  
 
 ## ページ紹介
-・TOP<br>
+・TOPページ<br>
 ・新規登録、ログイン、ログアウト機能<br>
 ・chat機能<br>
 ・インクリメンタルサーチ機能<br>
 
 
 ## 使用した機能、技術
-gem 'rails', '~> 5.0.7', '>= 5.0.7.2'<br>
-gem 'mysql2', '>= 0.3.18', '< 0.6.0'<br>
+gem 'rails, ~> 5.0.7, >= 5.0.7.2'<br>
+gem 'mysql2, >= 0.3.18, < 0.6.0'<br>
 gem 'devise'<br>
 gem 'font-awesome-sass'<br>
-gem 'haml-rails'
-gem 'sass-rails', '~> 5.0'
-gem 'jquery-rails'
-gem 'jbuilder', '~> 2.5'
-gem 'pry-rails'
-gem 'carrierwave'(画像のアップロード)
-gem 'mini_magick'（画像加工）
+gem 'haml-rails'<br>
+gem 'sass-rails, ~> 5.0'<br>
+gem 'jquery-rails'<br>
+gem jbuilder, ~> 2.5<br>
+gem 'pry-rails'<br>
+gem 'carrierwave'(画像のアップロード)<br>
+gem 'mini_magick'（画像加工）<br>
 
 # 各テーブル
 ## usersテーブル
