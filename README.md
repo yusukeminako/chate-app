@@ -1,5 +1,35 @@
-# README
 
+# README
+## NAME
+PAPA-CHAT 〜パパも子育ても頑張ります！〜
+
+## PAPA-CHATとは
+パパの子育て意見交換ができるchatサイトである。グループごとにchatで意見交換が可能である。
+
+## デプロイ先
+https://papachat.herokuapp.com/  
+
+## ページ紹介
+・TOP<br>
+・新規登録、ログイン、ログアウト機能<br>
+・chat機能<br>
+・インクリメンタルサーチ機能<br>
+
+
+## 使用した機能、技術
+gem 'rails', '~> 5.0.7', '>= 5.0.7.2'<br>
+gem 'mysql2', '>= 0.3.18', '< 0.6.0'<br>
+gem 'devise'<br>
+gem 'font-awesome-sass'<br>
+gem 'haml-rails'
+gem 'sass-rails', '~> 5.0'
+gem 'jquery-rails'
+gem 'jbuilder', '~> 2.5'
+gem 'pry-rails'
+gem 'carrierwave'(画像のアップロード)
+gem 'mini_magick'（画像加工）
+
+# 各テーブル
 ## usersテーブル
 |Column|Type|Options|
 |------|----|null: false|
