@@ -169,37 +169,37 @@ body{
 
 // メインフッダー部分
 .main-bottom{
-  display: flex;
+  
   &__left{
-    position: relative;
-    width: 1100px;
+    display: flex;
+    height: 80px;
     padding-top: 10px;
-    padding-left: 10px;
+    padding-left: 16px;
     &__message{
       color: #999999;
       padding-left: 10px;
-      line-height: 67px;
       width: 1100px;
+      // height: 72px;
     }
 
     &__image{
-      position: absolute;
-      top:0px;
-      right: -127px;
+      padding: 24px 10px;
 
     }
   }
-  &__right{
-    margin-right: 40px;
-    color: white;
-    background-color: #0bd;
-    margin: 10px;
-    width: 100px;
-    line-height: 71px;
-    font-size: 28px;
-    &:hover {
-      transform: scale(1.1);
-    }
+    &__right{
+      margin-right: 40px;
+      color: white;
+      background-color: #0bd;
+      margin: 10px;
+      width: 100px;
+      line-height: 61px;
+      font-size: 28px;
+      height: 59px;
+  
+      &:hover {
+        transform: scale(1.1);
+      }
 
   }
 }
