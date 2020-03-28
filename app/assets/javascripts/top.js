@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$.fn.autoChanger = function() {
 		var timeout = 3000;
-		var speed = 0;
+		var speed = 0000;
 		var element = $(this).children();
 		// var length = $(this).children().length;
 		var current = 0;
