@@ -156,6 +156,7 @@
   width:120px;
   text-align: center;
   line-height: 40px;
+  border-radius: 5px;
 
 }
 .login{
@@ -173,6 +174,7 @@
   width:120px;
   text-align: center;
   line-height: 40px;
+  border-radius: 5px;
 }
 
 
@@ -197,6 +199,7 @@
   text-align: center;
   line-height: 40px;
   overflow: hidden;
+  border-radius: 5px;
 }
 .logout:after{
   width: 100%;
@@ -240,60 +243,7 @@
 a:-webkit-any-link{
   text-decoration: none;
 }
-// .main-button{
-//   text-align: center;
-//   font-size: 30px;
-//   position: fixed; 
-//   top:400px;
-//   right:600px;
-//   display: inline-block;
-//   // position: relative;
-//   padding: 0.5em 1.4em;
-//   text-decoration: none;
-//   background: #0bd;/*ボタン色*/
-//   color: #FFF;
-//   border-bottom: solid 5px #36528c;/*ボタン色より暗めに*/
-//   border-right: solid 5px #5375bd;/*ボタン色より暗めに*/
-//   a{
-//     color: white;
-//   }
-// }
-// .main-button:before {  
-//   content: " ";
-//   // position: absolute;
-//   // bottom: -5px;
-//   // left: -1px;
-//   width: 0;
-//   height: 0;
-//   border-width: 0 6px 6px 0px;
-//   border-style: solid;
-//   border-color: transparent;
-//   border-bottom-color: #FFF;
-// }
 
-// .main-button:after {  
-//   content: " ";
-//   position: absolute;
-//   top: -1px;
-//   right: -5px;
-//   width: 0;
-//   height: 0;
-//   border-width: 0px 6px 6px 0px;
-//   border-style: solid;
-//   border-color: #FFF;
-//   border-bottom-color: transparent;
-// }
-
-// .main-button:active {
-//   /*ボタンを押したとき*/
-//   border:none;
-//   -webkit-transform: translate(6px,6px);
-//   transform: translate(6px,6px);
-// }
-
-// .main-button:active:after, .btn-square-slant:active:before {
-//   content: none;/*ボタンを押すと線が消える*/
-// }
 // 画像を自動で切り替える
 header ul#header-images {
 	width: 970px;
@@ -342,11 +292,12 @@ header ul#header-images li {
   font-weight: bold;
   overflow: hidden;
   z-index: 1;
-  position: fixed;
-  top: 400px;
-  right: 650px;
-  font-size: 20px;
+  position: absolute;//画像の上にボタン配置
+  top: 50%;
+  right: 40%;
+  border-radius: 5px;//角を丸くしている
   
+
 }
 .main-button:after{
   width: 100%;
